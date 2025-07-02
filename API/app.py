@@ -27,7 +27,7 @@ model = ChatOpenAI()
 llm = Ollama(model="gemma3")
 
 prompt1 = ChatPromptTemplate.from_template('Write me an essay about {topic} with 100 words')
-prompt2 = ChatPromptTemplate.from_template('Write me a poem about {topic} with 100 words') 
+prompt2 = ChatPromptTemplate.from_template('Write me a poem about {topic} for a 5 year old kid with 100 words') 
 
 add_routes(app, 
            prompt1|model,
