@@ -27,7 +27,7 @@ st.title('Chatbot Assistant Using Gemma 3')
 input_text = st.text_input('Search the topic you want')
 
 # Ollama  LLM 
-llm=Ollama(model="gemma3")
+llm=Ollama(model="gemma3:1b")
 output_parser = StrOutputParser()
 chain = prompt|llm|output_parser
 

@@ -19,12 +19,12 @@ app = FastAPI(
 )
 
 add_routes(app, 
-           ChatOpenAI(), 
+           ChatOpenAI(model='gpt-4.1-nano-2025-04-14'), 
            path='/openai')
 
 model = ChatOpenAI()
 
-llm = Ollama(model="gemma3")
+llm = Ollama(model="gemma3:1b")
 
 prompt1 = ChatPromptTemplate.from_template('Write me an essay about {topic} with 100 words')
 prompt2 = ChatPromptTemplate.from_template('Write me a poem about {topic} for a 5 year old kid with 100 words') 
