@@ -17,3 +17,8 @@ langchain_ollama
 arxiv
 wikipedia
 langchainhub
+pymupdf
+langchain-text-splitters
+sentence_transformers
+langchain_huggingface
+langchain_chroma

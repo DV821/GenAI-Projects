@@ -209,4 +209,6 @@ marimo/_lsp/
 __marimo__/
 
 # Directories
-Langchain Basics/
+Langchain Basics/Learning.ipynb
+Langchain Basics/chroma_db
+Langchain Basics/faiss_index
